@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon's Professional Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 350px; /* Adjust width as needed */
+        }
+        h1 {
+            color: #0366d6;
+            margin-top: 0;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #f2f2f2; /* Light grey background */
+            border: 1px solid #d1d1d1; /* Grey border */
+            padding: 10px 20px;
+            border-radius: 5px; /* Rounded corners */
+            
+        }
+        .button:hover {
+            background-color: #e1e1e1; /* Slightly darker grey on hover */
+        }
+        .button:nth-child(5) {
+            grid-column: span 2; /* Makes the last button span two columns */
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%; /* Optional: rounds the corners of the image */
+            margin-top: 20px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+            display: block; /* Makes each link a block, which will help with spacing */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="d62f5a80-8c7f-4f33-83ec-a4eb92d4a1ac.jpg" alt="Simon">
+    <h1>Welcome to My Professional Portfolio</h1>
+    <div class="buttons">
+        <a href="https://www.linkedin.com/in/simon-stl" target="_blank" class="button">LinkedIn</a>
+        <a href="https://docs.google.com/document/d/1zuLSkA9QKmjw4HRO7BPG-tbUSrFITwTWczUwVD9QhDI/edit?usp=sharing" target="_blank" class="button">Resume</a>
+        <a href="https://drive.google.com/drive/folders/1JXB_sUd451TbtEPIFf4yQwCLfXw07vZv?usp=sharing" target="_blank" class="button">Projects</a>
+        <a href="https://secure.plum.io/p/hKUN4X8kgtzh-fElfJpZdQ" target="_blank" class="button">Plum Talent Profile</a>
+        <a href="https://drive.google.com/drive/folders/1vZV7rIgsO4tLaSP3Z5-XlgR6IBMsE27x?usp=drive_link" target="_blank" class="button">Additional Files</a>
+    </div>
+</div>
+</body>
+</html>
