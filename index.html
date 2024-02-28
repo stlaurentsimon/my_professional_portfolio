@@ -15,52 +15,62 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            text-align: center;
         }
         .container {
-            text-align: center;
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            width: 350px; /* Adjust width as needed */
+            width: 90%; /* Responsive width */
+            max-width: 350px; /* Maximum width */
+            margin: auto;
         }
         h1 {
             color: #0366d6;
-            margin-top: 0;
-            
+            margin: 20px 0 10px;
+            font-size: 24px; /* Increased font size */
         }
         .buttons {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
+            grid-template-columns: 1fr;
+            grid-gap: 15px; /* Increased gap */
             margin-top: 20px;
         }
         .button {
-            background-color: #f2f2f2; /* Light grey background */
-            border: 1px solid #d1d1d1; /* Grey border */
-            padding: 10px 20px;
-            border-radius: 5px; /* Rounded corners */
-            
+            background-color: #f2f2f2;
+            border: 1px solid #d1d1d1;
+            padding: 15px 20px; /* Increased padding */
+            border-radius: 5px;
+            font-size: 16px; /* Increased font size */
         }
         .button:hover {
-            background-color: #e1e1e1; /* Slightly darker grey on hover */
-        }
-        .button:nth-child(5) {
-            grid-column: span 2; /* Makes the last button span two columns */
+            background-color: #e1e1e1;
         }
         img {
-            width: 200px;
+            width: 100px; /* Adjusted size */
             height: auto;
-            border-radius: 50%; /* Optional: rounds the corners of the image */
+            border-radius: 50%;
             margin-top: 20px;
         }
         a {
             color: #0366d6;
             text-decoration: none;
-            display: block; /* Makes each link a block, which will help with spacing */
+            display: block;
         }
         a:hover {
             text-decoration: underline;
+        }
+        @media (min-width: 768px) {
+            .buttons {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+            }
+            .button:nth-child(5) {
+                grid-column: span 2;
+            }
+            img {
+                width: 200px; /* Larger image on wider screens */
+            }
         }
     </style>
 </head>
